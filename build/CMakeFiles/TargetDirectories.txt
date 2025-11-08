@@ -1,0 +1,3 @@
+C:/Users/chris/sccpp/build/CMakeFiles/sccpp.dir
+C:/Users/chris/sccpp/build/CMakeFiles/edit_cache.dir
+C:/Users/chris/sccpp/build/CMakeFiles/rebuild_cache.dir
