@@ -73,6 +73,14 @@ build CMakeFiles/sccpp.dir/src/device.cpp.obj: CXX_COMPILER__sccpp_unscanned_Deb
   OBJECT_DIR = CMakeFiles\sccpp.dir
   OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
 
+build CMakeFiles/sccpp.dir/src/socket.cpp.obj: CXX_COMPILER__sccpp_unscanned_Debug C$:/Users/chris/sccpp/src/socket.cpp || cmake_object_order_depends_target_sccpp
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\sccpp.dir\src\socket.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -Wall -Wextra -g
+  INCLUDES = -IC:/Users/chris/sccpp/include
+  OBJECT_DIR = CMakeFiles\sccpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target sccpp
@@ -81,10 +89,11 @@ build CMakeFiles/sccpp.dir/src/device.cpp.obj: CXX_COMPILER__sccpp_unscanned_Deb
 #############################################
 # Link the executable sccpp.exe
 
-build sccpp.exe: CXX_EXECUTABLE_LINKER__sccpp_Debug CMakeFiles/sccpp.dir/src/main.cpp.obj CMakeFiles/sccpp.dir/src/logger.cpp.obj CMakeFiles/sccpp.dir/src/device.cpp.obj
+build sccpp.exe: CXX_EXECUTABLE_LINKER__sccpp_Debug CMakeFiles/sccpp.dir/src/main.cpp.obj CMakeFiles/sccpp.dir/src/logger.cpp.obj CMakeFiles/sccpp.dir/src/device.cpp.obj CMakeFiles/sccpp.dir/src/socket.cpp.obj
   CONFIG = Debug
   FLAGS = -g
-  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_FLAGS = -mconsole
+  LINK_LIBRARIES = -lWs2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\sccpp.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

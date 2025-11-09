@@ -10,9 +10,15 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
 include_directories(include)
 
 add_executable(sccpp 
-    src/main.cpp
-    src/logger.cpp
-    src/device.cpp
+  src/main.cpp
+  src/logger.cpp
+  src/device.cpp
+  src/socket.cpp
 )
+
+if(WIN32)
+  target_link_options(sccpp PRIVATE -mconsole)
+  target_link_libraries(sccpp Ws2_32)  # link WinSock
+endif()
 
 target_compile_options(sccpp PRIVATE -Wall -Wextra -g)

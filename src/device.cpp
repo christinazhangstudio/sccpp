@@ -122,7 +122,8 @@ void free_device_list(DeviceList* list) {
 bool adb_forward(const char* serial, Logger& log) {
   char cmd[512];
   // like vsn..., but for non-variadic
-  snprintf(cmd, sizeof(cmd), "adb -s \"%s\" forward tcp:27183 local:sccpp", serial);
+  // device connects to Android unix domain socket at localabstract:<name>
+  snprintf(cmd, sizeof(cmd), "adb -s \"%s\" forward tcp:27183 localabstract:sccpp", serial);
 
   log.info("forwarding; %s", cmd);
 

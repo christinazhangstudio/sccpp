@@ -1,7 +1,5 @@
 # ninja log v7
 26	224	7843450452280443	CMakeFiles/sccpp.dir/src/logger.cpp.obj	90a5e364c5aa3fb1
-18	740	7843649899634262	CMakeFiles/sccpp.dir/src/main.cpp.obj	bb1c06d9eb96c346
-389	548	7843651305770459	sccpp.exe	55bd49c8c4cf4a25
-6	387	7843651301937774	CMakeFiles/sccpp.dir/src/device.cpp.obj	9a167958cc5894cb
 20	1826	7843652363668121	CMakeFiles/sccpp.dir/src/main.cpp.obj	bb1c06d9eb96c346
 1827	2181	7843652381728029	sccpp.exe	55bd49c8c4cf4a25
+6	387	7843651301937774	CMakeFiles/sccpp.dir/src/device.cpp.obj	9a167958cc5894cb

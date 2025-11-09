@@ -1,6 +1,8 @@
 {
     "files.associations": {
       "cmath": "cpp",
-      "cstring": "cpp"
+      "cstring": "cpp",
+      "cstddef": "cpp",
+      "cstdint": "cpp"
     }
 }
