@@ -2,5 +2,8 @@
 [INFO]: discovering ADB devices...
 [INFO]: found device; 39090DLJH002RY (device)
 [INFO]: device discovery complete; found 1 devices
-[INFO]: first device: 39090DLJH002RY (device)
-[INFO]: sccpp exiting
+[INFO]: selected device: 39090DLJH002RY (device)
+[INFO]: forwarding; adb -s "39090DLJH002RY" forward tcp:27183 local:sccpp
+[ERROR]: adb returned with error code; 27183
+[INFO]: successfully forwarded tcp:27183 -> local:sccpp
+[INFO]: ready for socket connection on localhost:27183

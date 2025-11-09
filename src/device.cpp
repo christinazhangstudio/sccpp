@@ -135,9 +135,9 @@ bool adb_forward(const char* serial, Logger& log) {
   char line[128];
   while(fgets(line, sizeof(line), pipe)) {
     trim(line);
-    if(strlen(line) > 0) {
-      log.error("adb returned; %s", line);
-      return false; // if adb outputs anything this is likely an err
+    if(strlen(line) > 0 && strcmp(line, "27183") != 0) {
+      log.error("adb returned with error code; %s", line);
+      return false; // if adb outputs anything (other than the tcp port), this is likely an err
     }
   }
 

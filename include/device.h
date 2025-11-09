@@ -3,14 +3,15 @@
 #include <string.h>
 // #include <vector>
 #include <cstddef>
+#include <logger.h>
 
 struct Device {
   char *serial;
   char *state;
 
   Device(const char* s, const char* st) {
-      serial = strdup(s); // strdup = malloc + strcpy; needs to be freed
-      state = strdup(st);
+    serial = strdup(s); // strdup = malloc + strcpy; needs to be freed
+    state = strdup(st);
   }
 
   ~Device() {

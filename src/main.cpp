@@ -42,7 +42,23 @@ int main(int argc, char **argv) {
 
   log.info("selected device: %s (%s)", selected->serial, selected->state);
 
+  if(!adb_forward(selected->serial, log)) {
+    log.error("failed to adb forward, will attempt cleanup");
+    adb_forward_remove(selected->serial, log);
+    free_device_list(devices);
+    return 1;
+  }
+
+  log.info("ready for socket connection on localhost:27183");
+
+  _sleep(6000);
+
+  log.info("cleaning up adb forward");
+  adb_forward_remove(selected->serial, log);
+
   free_device_list(devices);
+
+  // TODO: catch ctrl-C ?
 
   log.info("sccpp exiting");
   return 0;
