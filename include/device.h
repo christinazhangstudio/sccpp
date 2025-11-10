@@ -42,4 +42,4 @@ struct DeviceList {
 bool adb_forward(const char* serial, Logger& log);
 
 // remove froward
-void adb_forward_remove(const char* serial, Logger &log);
+void adb_forward_remove(const char* serial, Logger& log);

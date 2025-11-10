@@ -1,6 +1,7 @@
 #pragma once
 #include <cstddef>
 #include <cstdint>
+#include "logger.h"
 
 #ifdef _WIN32
   #include <winsock2.h>
@@ -40,7 +41,7 @@ public:
   // to avoid any accidental implicit casts to void*
   // char* can be cased to unint8_t* on the other hand.
   bool connect(const char* host, uint16_t port);
-  bool send(const uint8_t* data, size_t size);
+  bool send(const uint8_t* data, size_t size, Logger& log);
   bool recv(uint8_t* buffer, size_t size, size_t* received = nullptr);
   void close();
 };

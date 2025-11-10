@@ -3,7 +3,14 @@
 [INFO]: found device; 39090DLJH002RY (device)
 [INFO]: device discovery complete; found 1 devices
 [INFO]: selected device: 39090DLJH002RY (device)
-[INFO]: forwarding; adb -s "39090DLJH002RY" forward tcp:27183 local:sccpp
-[ERROR]: adb returned with error code; 27183
+[INFO]: forwarding; adb -s "39090DLJH002RY" forward tcp:27183 localabstract:sccpp
 [INFO]: successfully forwarded tcp:27183 -> local:sccpp
-[INFO]: ready for socket connection on localhost:27183
+[INFO]: ready for socket connection on localhost:27183, connecting...
+[INFO]: connected to sccpp server
+[INFO]: sent 5 number of bytes
+[INFO]: sent handshake: "sccpp"
+[INFO]: device name: "Pixel 8"
+[INFO]: closing socket
+[INFO]: cleaning up adb forward
+[INFO]: removing forward; adb -s "39090DLJH002RY" forward --remove tcp:27183
+[INFO]: sccpp exiting

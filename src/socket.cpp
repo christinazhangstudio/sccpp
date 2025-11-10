@@ -64,18 +64,22 @@ bool Socket::connect(const char* host, uint16_t port) {
   return true;
 }
 
-bool Socket::send(const uint8_t* data, size_t size) {
+bool Socket::send(const uint8_t* data, size_t size, Logger& log) {
   // created from socket(), check if invalid or closed
-  if(sock != SOCKET_INVALID) {
+  if(sock == SOCKET_INVALID) {
+    log.error("socket was invalid");
     return false;
   }
+
+  int ret = ::send(sock, (const char*)data, size, 0);
+  log.info("sent %d number of bytes", ret);
   
-  return ::send(sock, (const char*)data, size, 0) == (int)size;
+  return ret == (int)size;
 }
 
 bool Socket::recv(uint8_t* buffer, size_t size, size_t* received) {
   // created from socket(), check if invalid or closed
-  if(sock != SOCKET_INVALID) {
+  if(sock == SOCKET_INVALID) {
     return false;
   }
 

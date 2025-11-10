@@ -1,5 +1,15 @@
 # ninja log v7
 26	224	7843450452280443	CMakeFiles/sccpp.dir/src/logger.cpp.obj	90a5e364c5aa3fb1
-20	1826	7843652363668121	CMakeFiles/sccpp.dir/src/main.cpp.obj	bb1c06d9eb96c346
-1827	2181	7843652381728029	sccpp.exe	55bd49c8c4cf4a25
-6	387	7843651301937774	CMakeFiles/sccpp.dir/src/device.cpp.obj	9a167958cc5894cb
+25	1647	7844496112060653	CMakeFiles/sccpp.dir/src/main.cpp.obj	bb1c06d9eb96c346
+1448	1662	7844496748363288	sccpp.exe	b8debae5304eede8
+58	2715	7844495493951750	CMakeFiles/sccpp.dir/src/device.cpp.obj	9a167958cc5894cb
+33	1446	7844496734205522	CMakeFiles/sccpp.dir/src/socket.cpp.obj	4f32cc69361453e5
+19	1209	7844497011488170	CMakeFiles/sccpp.dir/src/socket.cpp.obj	4f32cc69361453e5
+1211	1372	7844497023408295	sccpp.exe	b8debae5304eede8
+9	3035	7844499835627578	CMakeFiles/sccpp.dir/src/socket.cpp.obj	4f32cc69361453e5
+3036	3404	7844499865894824	sccpp.exe	b8debae5304eede8
+97	4194	7844516653490775	CMakeFiles/sccpp.dir/src/socket.cpp.obj	4f32cc69361453e5
+88	4538	7844516653410750	CMakeFiles/sccpp.dir/src/main.cpp.obj	bb1c06d9eb96c346
+4538	4916	7844516697897450	sccpp.exe	b8debae5304eede8
+40	2582	7844520174876841	CMakeFiles/sccpp.dir/src/main.cpp.obj	bb1c06d9eb96c346
+2586	3011	7844520200341017	sccpp.exe	b8debae5304eede8
