@@ -105,6 +105,7 @@ int main(int argc, char **argv) {
 
   log.info("waiting for video stream");
 
+  boolean first_frame = true;
   while(true) {
     uint64_t timestamp;
     uint32_t packet_size;
@@ -123,9 +124,10 @@ int main(int argc, char **argv) {
 
     log.info("received NAL; %u bytes", (uint32_t)packet_size);
 
-    if(decoder.decode(nal.data(), packet_size)) {
+    decoder.decode(nal.data(), packet_size);
+    if(first_frame) {
+      first_frame = false;
       log.info("first frame decoded");
-      break;
     }
   }
 
