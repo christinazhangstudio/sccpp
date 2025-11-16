@@ -1,4 +1,5 @@
 # ninja log v7
+<<<<<<< HEAD
 91	937	7850342870410978	CMakeFiles/sccpp.dir/src/logger.cpp.obj	833c745fa1f4455d
 99	914	7850342870486080	CMakeFiles/sccpp.dir/src/device.cpp.obj	8a97f279efce9487
 114	1411	7850342870629002	CMakeFiles/sccpp.dir/src/decoder.cpp.obj	94ab479f7e25255f
@@ -29,3 +30,16 @@
 462	1039	7850397575093534	sccpp.exe	d10a97ddb9e405b4
 104	1131	7850398752310471	CMakeFiles/sccpp.dir/src/renderer.cpp.obj	e28807347e59ac50
 1133	1925	7850398762588568	sccpp.exe	d10a97ddb9e405b4
+=======
+2586	3011	7844520200341017	sccpp.exe	b8debae5304eede8
+9	222	7849550691813607	CMakeFiles/sccpp.dir/src/logger.cpp.obj	23eaa06a4f9f29d8
+14	234	7849550691853612	CMakeFiles/sccpp.dir/src/device.cpp.obj	219b1cc404d4826b
+33	587	7849550692047205	CMakeFiles/sccpp.dir/src/decoder.cpp.obj	d4d1c461ef9c60f6
+29	1547	7849550692007218	CMakeFiles/sccpp.dir/src/socket.cpp.obj	fadca9891d687c5d
+5	2156	7849550691769021	CMakeFiles/sccpp.dir/src/main.cpp.obj	bdf24edadfb1b467
+2156	2653	7849550713283335	sccpp.exe	e385b825a318c6b5
+28	2848	7849570299265475	CMakeFiles/sccpp.dir/src/main.cpp.obj	bdf24edadfb1b467
+2850	3260	7849570327481533	sccpp.exe	e385b825a318c6b5
+138	8015	7850142091815518	CMakeFiles/sccpp.dir/src/main.cpp.obj	bdf24edadfb1b467
+8017	9390	7850142170596373	sccpp.exe	e385b825a318c6b5
+>>>>>>> 1814460ef2ee5434455543f0ccff612c6fa07e7e
