@@ -11,6 +11,10 @@ set(FFMPEG_DIR ${CMAKE_SOURCE_DIR}/ffmpeg)
 include_directories(${FFMPEG_DIR}/include)
 link_directories(${FFMPEG_DIR}/lib)
 
+set(SDL_DIR ${CMAKE_SOURCE_DIR}/sdl)
+include_directories(${SDL_DIR}/include)
+link_directories(${SDL_DIR}/lib)
+
 include_directories(include)
 
 add_executable(sccpp
@@ -19,13 +23,17 @@ add_executable(sccpp
   src/device.cpp
   src/socket.cpp
   src/decoder.cpp
+  src/renderer.cpp
 )
 
 target_link_libraries(sccpp
+  ## ffmpeg
   avcodec
   avutil
   avformat
   swscale
+  # SDL
+  SDL3
 )
 
 if(WIN32)

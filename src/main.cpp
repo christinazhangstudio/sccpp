@@ -3,6 +3,7 @@
 #include "device.h"
 #include "socket.h"
 #include "decoder.h"
+#include "renderer.h"
 // (quotes tell the compiler to look into the src dir
 // and if it isn't there, look into system include paths)
 // while <> tell the compiler to only search for it in
@@ -104,8 +105,10 @@ int main(int argc, char **argv) {
   }
 
   log.info("waiting for video stream");
-
-  while(true) {
+  
+  Renderer sdl;
+  boolean first_frame = true;
+  while(sdl.poll_event()) {
     uint64_t timestamp;
     uint32_t packet_size;
 
@@ -123,9 +126,26 @@ int main(int argc, char **argv) {
 
     log.info("received NAL; %u bytes", (uint32_t)packet_size);
 
-    if(decoder.decode(nal.data(), packet_size)) {
-      log.info("first frame decoded");
-      break;
+    if (decoder.decode(nal.data(), packet_size)) {
+      if(first_frame) {
+        log.info("first frame decoded, initing SDL...");
+        if(!sdl.init(decoder.get_width(), decoder.get_height())) {
+          log.error("failed to init SDL");
+          return 1;
+        }
+        
+        // [INFO]: pixel format: yuv420p (0)
+        log.info("pixel format: %s (%d)", 
+          av_get_pix_fmt_name((AVPixelFormat)decoder.get_frame()->format), 
+          decoder.get_frame()->format
+        );
+
+        // [INFO]: SDL window opened: 1088x2208
+        log.info("SDL window opened: %dx%d", decoder.get_width(), decoder.get_height());
+        first_frame = false;
+      }
+
+      sdl.render(decoder.get_frame());
     }
   }
 

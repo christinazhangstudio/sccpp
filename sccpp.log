@@ -12,9 +12,132 @@
 [INFO]: device name: "Pixel 8"
 [INFO]: initialized ffmpeg decoder
 [INFO]: waiting for video stream
-[INFO]: received NAL; 652 bytes
-[INFO]: DECODED FRAME: 2x2, format=0
-[INFO]: first frame decoded
+[INFO]: received NAL; 29 bytes
+[INFO]: received NAL; 75461 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: first frame decoded, initing SDL...
+[ERROR]: attempted to create window and texture
+[INFO]: pixel format: yuv420p (0)
+[INFO]: SDL window opened: 1088x2208
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 2543 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 14138 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 15494 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 15411 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 14674 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13845 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 15227 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 15958 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 15219 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 15756 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13279 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: received NAL; 13125 bytes
+[INFO]: DECODED FRAME: 1088x2208, format=0
+[INFO]: Frame: 1088x2208, pixfmt=yuv420p (0)
+[INFO]: SDL pitch = 0, expected width*4 = 4352
+[INFO]: break received
 [INFO]: closing socket
 [INFO]: cleaning up adb forward
 [INFO]: removing forward; adb -s "39090DLJH002RY" forward --remove tcp:27183

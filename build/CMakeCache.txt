@@ -23,8 +23,8 @@ CMAKE_AR:FILEPATH=C:/msys64/mingw64/bin/ar.exe
 //No help, variable specified on the command line.
 CMAKE_BUILD_TYPE:STRING=Debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=C:/msys64/mingw64/bin/g++.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=C:/msys64/mingw64/bin/g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -241,6 +241,15 @@ sccpp_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 sccpp_SOURCE_DIR:STATIC=C:/Users/chris/sccpp
+
+//Value Computed by CMake
+scrcpy_cpp_BINARY_DIR:STATIC=C:/Users/chris/sccpp/build
+
+//Value Computed by CMake
+scrcpy_cpp_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+scrcpy_cpp_SOURCE_DIR:STATIC=C:/Users/chris/sccpp
 
 
 ########################
