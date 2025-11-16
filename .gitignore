@@ -1,3 +1,5 @@
 ffmpeg/bin
 ffmpeg/include
 ffmpeg/lib
+*.dll
+*.exe

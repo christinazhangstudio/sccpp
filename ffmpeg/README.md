@@ -17,3 +17,5 @@ use download.ps1 to gen a structure like:
 │       ├── libavutil.a
 │       └── ...
 ```
+
+Copy the DLLs next to the exe in the build/ folder for runtime.

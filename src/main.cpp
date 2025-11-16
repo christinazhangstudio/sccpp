@@ -98,6 +98,35 @@ int main(int argc, char **argv) {
   if(!decoder.init()) {
     log.error("failed to init decoder");
     client.close();
+    adb_forward_remove(selected->serial, log);
+    free_device_list(devices);
+    return 1;
+  }
+
+  log.info("waiting for video stream");
+
+  while(true) {
+    uint64_t timestamp;
+    uint32_t packet_size;
+
+    if(!client.recv((uint8_t*)&timestamp, 8)) break;
+    if(!client.recv((uint8_t*)&packet_size, 4)) break;
+
+    // network to host
+    packet_size = ntohl(packet_size);
+    std::vector<uint8_t> nal(packet_size);
+    size_t received = 0;
+    if(!client.recv(nal.data(), packet_size, &received) || received != packet_size) {
+      log.info("break received");
+      break;
+    }
+
+    log.info("received NAL; %u bytes", (uint32_t)packet_size);
+
+    if(decoder.decode(nal.data(), packet_size)) {
+      log.info("first frame decoded");
+      break;
+    }
   }
 
   //  ------ ffmpeg decoding end ------
