@@ -1,26 +1,32 @@
 [
 {
   "directory": "C:/Users/chris/sccpp/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\main.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\main.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\main.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\main.cpp",
   "file": "C:/Users/chris/sccpp/src/main.cpp",
   "output": "C:/Users/chris/sccpp/build/CMakeFiles/sccpp.dir/src/main.cpp.obj"
 },
 {
   "directory": "C:/Users/chris/sccpp/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\logger.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\logger.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\logger.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\logger.cpp",
   "file": "C:/Users/chris/sccpp/src/logger.cpp",
   "output": "C:/Users/chris/sccpp/build/CMakeFiles/sccpp.dir/src/logger.cpp.obj"
 },
 {
   "directory": "C:/Users/chris/sccpp/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\device.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\device.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\device.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\device.cpp",
   "file": "C:/Users/chris/sccpp/src/device.cpp",
   "output": "C:/Users/chris/sccpp/build/CMakeFiles/sccpp.dir/src/device.cpp.obj"
 },
 {
   "directory": "C:/Users/chris/sccpp/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\socket.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\socket.cpp",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\socket.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\socket.cpp",
   "file": "C:/Users/chris/sccpp/src/socket.cpp",
   "output": "C:/Users/chris/sccpp/build/CMakeFiles/sccpp.dir/src/socket.cpp.obj"
+},
+{
+  "directory": "C:/Users/chris/sccpp/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include -g -std=gnu++17 -Wall -Wextra -g -o CMakeFiles\\sccpp.dir\\src\\decoder.cpp.obj -c C:\\Users\\chris\\sccpp\\src\\decoder.cpp",
+  "file": "C:/Users/chris/sccpp/src/decoder.cpp",
+  "output": "C:/Users/chris/sccpp/build/CMakeFiles/sccpp.dir/src/decoder.cpp.obj"
 }
 ]

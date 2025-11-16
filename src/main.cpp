@@ -2,6 +2,7 @@
 #include "logger.h"
 #include "device.h"
 #include "socket.h"
+#include "decoder.h"
 // (quotes tell the compiler to look into the src dir
 // and if it isn't there, look into system include paths)
 // while <> tell the compiler to only search for it in
@@ -11,6 +12,8 @@
 // (don't redefine these here)
 extern DeviceList* discover_devices(Logger &log);
 extern void free_device_list(DeviceList* list);
+
+Logger* g_log = nullptr;
 
 int main(int argc, char **argv) {
   // parse args (ex. --help)
@@ -86,6 +89,18 @@ int main(int argc, char **argv) {
     name_buf[received] = '\0';
     log.info("device name: \"%s\"", (char*)name_buf);
   }
+
+  // ------ ffmpeg decoding start ------
+
+  VideoDecoder decoder;
+  g_log = &log;
+  
+  if(!decoder.init()) {
+    log.error("failed to init decoder");
+    client.close();
+  }
+
+  //  ------ ffmpeg decoding end ------
 
   log.info("closing socket");
   client.close();

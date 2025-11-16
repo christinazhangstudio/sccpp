@@ -148,7 +148,7 @@ bool adb_forward(const char* serial, Logger& log) {
     return false;
   }
 
-  log.info("successfully forwarded tcp:27183 -> local:sccpp");
+  log.info("successfully forwarded tcp:27183 -> localabstract:sccpp");
   return true;
 }
 

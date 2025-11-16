@@ -53,7 +53,7 @@ build CMakeFiles/sccpp.dir/src/main.cpp.obj: CXX_COMPILER__sccpp_unscanned_Debug
   CONFIG = Debug
   DEP_FILE = CMakeFiles\sccpp.dir\src\main.cpp.obj.d
   FLAGS = -g -std=gnu++17 -Wall -Wextra -g
-  INCLUDES = -IC:/Users/chris/sccpp/include
+  INCLUDES = -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include
   OBJECT_DIR = CMakeFiles\sccpp.dir
   OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
 
@@ -61,7 +61,7 @@ build CMakeFiles/sccpp.dir/src/logger.cpp.obj: CXX_COMPILER__sccpp_unscanned_Deb
   CONFIG = Debug
   DEP_FILE = CMakeFiles\sccpp.dir\src\logger.cpp.obj.d
   FLAGS = -g -std=gnu++17 -Wall -Wextra -g
-  INCLUDES = -IC:/Users/chris/sccpp/include
+  INCLUDES = -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include
   OBJECT_DIR = CMakeFiles\sccpp.dir
   OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
 
@@ -69,7 +69,7 @@ build CMakeFiles/sccpp.dir/src/device.cpp.obj: CXX_COMPILER__sccpp_unscanned_Deb
   CONFIG = Debug
   DEP_FILE = CMakeFiles\sccpp.dir\src\device.cpp.obj.d
   FLAGS = -g -std=gnu++17 -Wall -Wextra -g
-  INCLUDES = -IC:/Users/chris/sccpp/include
+  INCLUDES = -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include
   OBJECT_DIR = CMakeFiles\sccpp.dir
   OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
 
@@ -77,7 +77,15 @@ build CMakeFiles/sccpp.dir/src/socket.cpp.obj: CXX_COMPILER__sccpp_unscanned_Deb
   CONFIG = Debug
   DEP_FILE = CMakeFiles\sccpp.dir\src\socket.cpp.obj.d
   FLAGS = -g -std=gnu++17 -Wall -Wextra -g
-  INCLUDES = -IC:/Users/chris/sccpp/include
+  INCLUDES = -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include
+  OBJECT_DIR = CMakeFiles\sccpp.dir
+  OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
+
+build CMakeFiles/sccpp.dir/src/decoder.cpp.obj: CXX_COMPILER__sccpp_unscanned_Debug C$:/Users/chris/sccpp/src/decoder.cpp || cmake_object_order_depends_target_sccpp
+  CONFIG = Debug
+  DEP_FILE = CMakeFiles\sccpp.dir\src\decoder.cpp.obj.d
+  FLAGS = -g -std=gnu++17 -Wall -Wextra -g
+  INCLUDES = -IC:/Users/chris/sccpp/ffmpeg/include -IC:/Users/chris/sccpp/include
   OBJECT_DIR = CMakeFiles\sccpp.dir
   OBJECT_FILE_DIR = CMakeFiles\sccpp.dir\src
 
@@ -89,11 +97,12 @@ build CMakeFiles/sccpp.dir/src/socket.cpp.obj: CXX_COMPILER__sccpp_unscanned_Deb
 #############################################
 # Link the executable sccpp.exe
 
-build sccpp.exe: CXX_EXECUTABLE_LINKER__sccpp_Debug CMakeFiles/sccpp.dir/src/main.cpp.obj CMakeFiles/sccpp.dir/src/logger.cpp.obj CMakeFiles/sccpp.dir/src/device.cpp.obj CMakeFiles/sccpp.dir/src/socket.cpp.obj
+build sccpp.exe: CXX_EXECUTABLE_LINKER__sccpp_Debug CMakeFiles/sccpp.dir/src/main.cpp.obj CMakeFiles/sccpp.dir/src/logger.cpp.obj CMakeFiles/sccpp.dir/src/device.cpp.obj CMakeFiles/sccpp.dir/src/socket.cpp.obj CMakeFiles/sccpp.dir/src/decoder.cpp.obj
   CONFIG = Debug
   FLAGS = -g
   LINK_FLAGS = -mconsole
-  LINK_LIBRARIES = -lWs2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -lavcodec  -lavutil  -lavformat  -lswscale  -lWs2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_PATH = -LC:/Users/chris/sccpp/ffmpeg/lib
   OBJECT_DIR = CMakeFiles\sccpp.dir
   POST_BUILD = cd .
   PRE_LINK = cd .

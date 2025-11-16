@@ -1,31 +1,18 @@
 
 ## prereqs
 
+```
+gcc -v -E -x c++ -
+```
+to list directories to include (see c_cpp_properties.json).
+
+Sometimes restarting Visual Studio Code will fix Intellisense.
+
 ![alt text](docs/imgs/adb.png)
 Developer Options > enable USB Debugging
 After connecting android device, check connection with `adb devices` and run prog.
 
-c_cpp_properties.json:
-```json
-{
-    "configurations": [
-        {
-            "name": "Win32",
-            "includePath": [
-                "${workspaceFolder}/**"
-            ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "compilerPath": "C:\\msys64\\mingw64\\bin\\gcc.exe",
-            "cStandard": "c17",
-            "cppStandard": "gnu++17",
-            "intelliSenseMode": "windows-gcc-x64",
-            "configurationProvider": "ms-vscode.cmake-tools"
-        }
-    ],
-    "version": 4
-}
-```
+- adb forwards e.g. `adb -s "39090DLJH002RY" forward tcp:27183 localabstract:sccpp`
+- connects to Sccpp Server (Java) via Socket
+- sends handshake; receives back device name
+- closes Socket and cleans up adb forward 
